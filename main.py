@@ -1,16 +1,9 @@
-# This is a sample Python script.
+from compundInterestCalculator import Interest
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+interest = Interest(1000, 0.05)
+rate = 5
+max_rate = 10
+while rate <= max_rate:
+    print(interest.calculate_interest(10))
+    interest.change_rate(rate/100)
+    rate += 1
